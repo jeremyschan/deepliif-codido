@@ -40,7 +40,7 @@ runner = CliRunner()
 runner.invoke(test, [
     '--input-dir', input_folder_path,
     '--output-dir', output_folder_path,
-    '--tile-size', args.tilesize,
+    '--tile-size', int(args.tilesize),
     '--model-dir', model_folder_path
     ])
 
